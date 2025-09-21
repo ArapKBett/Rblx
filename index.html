@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arap | Roblox Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Arap Logo">
+                <span>Arap</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Roblox <span class="highlight">Frontend & Backend</span> Scripter</h1>
+            <p>Creating immersive experiences through expert Lua scripting and game development</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <a href="#contact" class="btn secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="code-snippet">
+                <div class="code-header">
+                    <span class="red-dot"></span>
+                    <span class="yellow-dot"></span>
+                    <span class="green-dot"></span>
+                    <span>script.lua</span>
+                </div>
+                <pre><code class="language-lua">-- Advanced weapon system example
+local WeaponSystem = {}
+
+function WeaponSystem:Fire(player, target)
+    local damage = self:CalculateDamage(player)
+    local hitSuccess = self:CheckHit(player, target)
+    
+    if hitSuccess then
+        self:ApplyDamage(target, damage)
+        self:CreateVFX(player, target)
+        self:PlaySFX("Hit")
+    end
+end
+
+return WeaponSystem</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm Arap, a professional Roblox developer with expertise in both frontend and backend scripting.</p>
+                    <p>My passion lies in solving complex technical challenges and implementing features that elevate the player experience. I'm proficient in Lua, Roblox API, and various development frameworks.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="number">50+</span>
+                            <span class="label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">4+</span>
+                            <span class="label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">100%</span>
+                            <span class="label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-item">
+                        <span>GUI Design & Implementation</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>User Experience Optimization</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Animation Systems</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-item">
+                        <span>Data Management</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Server Optimization</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Security Systems</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="93%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Specializations</h3>
+                    <div class="skill-item">
+                        <span>Custom Game Systems</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="96%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Multiplayer Networking</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="91%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Performance Optimization</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="94%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder" style="background-color: #2a2e35;">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Advanced Combat System</h3>
+                        <p>A sophisticated combat framework featuring combo systems, special abilities, and responsive controls.</p>
+                        <div class="project-tech">
+                            <span>Lua</span>
+                            <span>Roblox API</span>
+                            <span>TweenService</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder" style="background-color: #2a2e35;">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Data Management System</h3>
+                        <p>Secure and efficient player data handling with automatic backups and recovery systems.</p>
+                        <div class="project-tech">
+                            <span>DataStore</span>
+                            <span>Lua</span>
+                            <span>Security</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder" style="background-color: #2a2e35;">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce System</h3>
+                        <p>Complete in-game marketplace with secure transactions, inventory management, and UI.</p>
+                        <div class="project-tech">
+                            <span>GUI</span>
+                            <span>Lua</span>
+                            <span>Economy</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's create something amazing together</h3>
+                    <p>I'm available for freelance projects and full-time opportunities. Reach out to me and let's discuss how we can bring your Roblox vision to life.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fab fa-discord"></i>
+                            <span>bta_5k</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>bettarap254@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Available Worldwide</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Arap Logo">
+                <span>Arap</span>
+            </div>
+            <p>© 2025 Arap. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-roblox"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>
